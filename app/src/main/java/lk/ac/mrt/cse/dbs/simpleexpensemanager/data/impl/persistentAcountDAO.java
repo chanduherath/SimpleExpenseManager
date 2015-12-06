@@ -37,7 +37,7 @@ public class persistentAcountDAO extends SQLiteOpenHelper implements AccountDAO 
     private static final String CREATE_TABLE_ACCOUNT = "CREATE TABLE " + TBLACCOUNT + "(" + ACCOUNTNO + " TEXT NOT NULL, " + BANKNAME + " TEXT NOT NULL, " + ACCOUNTHOLDERNAME + " TEXT NOT NULL, " + BALANCE + " REAL NOT NULL)";
 
     public persistentAcountDAO(Context context){
-        //super(context, DATABASE_NAME, null, DATABASE_VERSION);
+
         super(context, DBNAME, null, DATABASE_VERSION);
     }
 
